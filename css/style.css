@@ -26,3 +26,7 @@ li{
     display: flex;
     justify-content: space-between;
 }
+.add-item-area{
+    text-align: center;
+    padding: 30px;
+}

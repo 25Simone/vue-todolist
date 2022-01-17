@@ -22,11 +22,20 @@ new Vue({
                 done: true,
             },
         ],
+        newItemText: '',
     },
 
     methods: {
         removeItem: function(index) {
             this.todo.splice(index, 1);
+        },
+        addItem: function() {
+            const newItem = {
+                text: this.newItemText,
+                done: false,
+            };
+            this.todo.push(newItem);
+            this.newItemText = '';
         },
     },
 });
