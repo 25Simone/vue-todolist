@@ -37,5 +37,8 @@ new Vue({
             this.todo.push(newItem);
             this.newItemText = '';
         },
+        itemDone: function(index) {
+            this.todo[index].done = !this.todo[index].done;
+        }
     },
 });

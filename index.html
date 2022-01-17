@@ -19,7 +19,7 @@
         <div class="list-container">
             <ul>
                 <li v-for='(item, i) in todo'>
-                    <span :class="item.done ? 'item-done' : ''">{{item.text}}</span>
+                    <span @click='itemDone(i)' :class="item.done ? 'item-done' : ''">{{item.text}}</span>
                     <i @click='removeItem(i)' class="fas fa-trash-alt"></i>
                 </li>
             </ul>
