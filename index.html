@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="app">
+        <h1> Todo List</h1>
         <div class="add-item-area">
             <input @keyup.enter='addItem' v-model='newItemText' type="text" placeholder="Nuovo Todo">
             <button @click='addItem'>Aggiungi</button>
@@ -20,6 +21,7 @@
             <ul>
                 <li v-for='(item, i) in todo'>
                     <span @click='itemDone(i)' :class="item.done ? 'item-done' : ''">{{item.text}}</span>
+                    <i v-if='item.done' class="check-simbol far fa-check-circle"></i>
                     <i @click='removeItem(i)' class="fas fa-trash-alt"></i>
                 </li>
             </ul>
