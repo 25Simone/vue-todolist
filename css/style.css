@@ -3,9 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utility */
+.item-done{
+    text-decoration: line-through;
+}
+/* end utility */
+
+.list-container{
+    padding: 40px;
+    border-radius: 10px;
+    background: #f5f6f7;
+    max-width: 1200px;
+    margin: 40px auto;
+}
 ul{
     list-style: none;
 }
-.item-done{
-    text-decoration: line-through;
+li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
 }

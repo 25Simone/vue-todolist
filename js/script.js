@@ -23,4 +23,10 @@ new Vue({
             },
         ],
     },
+
+    methods: {
+        removeItem: function(index) {
+            this.todo.splice(index, 1);
+        },
+    },
 });
