@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <div class="add-item-area">
-            <input v-model='newItemText' type="text" placeholder="Nuovo Todo">
+            <input @keyup.enter='addItem' v-model='newItemText' type="text" placeholder="Nuovo Todo">
             <button @click='addItem'>Aggiungi</button>
         </div>
         
